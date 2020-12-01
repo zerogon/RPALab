@@ -102,11 +102,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,121.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,99</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">300,220.5 300,250.5 110,250.5 110,276</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,97</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">300,218.5 300,248.5 110,248.5 110,276</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="0. 프로젝트 변수 설정" sap:VirtualizedContainerService.HintSize="200,99" sap2010:WorkflowViewState.IdRef="Sequence_7">
+      <Sequence sap2010:Annotation.AnnotationText="0. 프로젝트 변수 설정" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_7">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -169,10 +169,10 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">10,276</av:Point>
-              <av:Size x:Key="ShapeSize">200,99</av:Size>
+              <av:Size x:Key="ShapeSize">200,97</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="데이터스테이지 점검" sap:VirtualizedContainerService.HintSize="376,530" sap2010:WorkflowViewState.IdRef="Sequence_107">
+          <Sequence sap2010:Annotation.AnnotationText="데이터스테이지 점검" sap:VirtualizedContainerService.HintSize="376,666" sap2010:WorkflowViewState.IdRef="Sequence_107">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -192,7 +192,19 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'push button  열기'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_67" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_8" Text="CID-ETL-01/LDPS_MIS">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0ea5ee5f-cb0d-4c16-a9fe-5f61a8de79d5" Selector="&lt;wnd app='director.exe' cls='ThunderRT6FormDC' title='Attach to Project' /&gt;&lt;wnd cls='Edit' idx='4' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'ThunderRT6CommandButton'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_69" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -204,7 +216,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="338ba4d6-a5e8-447d-bb6b-eed6c6bf7c7a" InformativeScreenshot="f6208f2b43e1ff231ea5473e814561b9" Selector="&lt;wnd app='director.exe' cls='ThunderRT6FormDC' title='Attach to Project' /&gt;&lt;wnd cls='ThunderRT6ComboBox' idx='4' /&gt;&lt;ctrl automationid='DropDown' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8f77e532-c6d3-4463-b7a8-c619c2239f65" InformativeScreenshot="e2aa99c461c78d075b72a9b8d8ae0b63" Selector="&lt;wnd app='director.exe' cls='ThunderRT6FormDC' title='Attach to Project' /&gt;&lt;wnd cls='ThunderRT6CommandButton' title='Login' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>
@@ -222,11 +234,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">750,108.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,144</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">850,252.5 850,282.5 450,282.5 450,340.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,123</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">750,170 720,170 720,300.5 580,300.5 580,389 550,389</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,144" sap2010:WorkflowViewState.IdRef="Sequence_35">
+      <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_35">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -264,11 +276,11 @@
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">350,340.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,99</av:Size>
+              <av:Size x:Key="ShapeSize">200,97</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">550,390 580,390 580,380 590,380</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="3-1. 서비스상태 모니터링" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="200,99" sap2010:WorkflowViewState.IdRef="Sequence_39">
+          <Sequence sap2010:Annotation.AnnotationText="3-1. 서비스상태 모니터링" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_39">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -354,11 +366,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">590,330.5</av:Point>
-                  <av:Size x:Key="ShapeSize">200,99</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">790,380 820,380 820,370 850,370</av:PointCollection>
+                  <av:Size x:Key="ShapeSize">200,97</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">790,379 820,379 820,359.5 850,359.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="3-2. 배치처리 로그조회" sap:VirtualizedContainerService.HintSize="200,99" sap2010:WorkflowViewState.IdRef="Sequence_101">
+              <Sequence sap2010:Annotation.AnnotationText="3-2. 배치처리 로그조회" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_101">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="strBatchFileName" />
                   <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strBatchColumn" />
@@ -616,11 +628,11 @@
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">850,298</av:Point>
-                      <av:Size x:Key="ShapeSize">200,144</av:Size>
+                      <av:Size x:Key="ShapeSize">200,123</av:Size>
                       <av:PointCollection x:Key="ConnectorLocation">870,231.5 870,261.5 310,261.5 310,311.5</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,144" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                  <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_81">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -665,10 +677,10 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">450,501.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,99</av:Size>
+          <av:Size x:Key="ShapeSize">200,97</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="3-2. 배치처리 로그조회" sap:VirtualizedContainerService.HintSize="200,99" sap2010:WorkflowViewState.IdRef="Sequence_68">
+      <Sequence sap2010:Annotation.AnnotationText="3-2. 배치처리 로그조회" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_68">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="strBatchFileName" />
           <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strBatchColumn" />
@@ -1033,11 +1045,11 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">480,121.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,99</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">680,171 710,171 710,180.5 750,180.5</av:PointCollection>
+          <av:Size x:Key="ShapeSize">200,97</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">680,170 710,170 710,78.5 850,78.5 850,108.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="1. 빅데이터 포탈 접속테스트" sap:VirtualizedContainerService.HintSize="200,99" sap2010:WorkflowViewState.IdRef="Sequence_78">
+      <Sequence sap2010:Annotation.AnnotationText="1. 빅데이터 포탈 접속테스트" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_78">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1833,10 +1845,10 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">500,657</av:Point>
-          <av:Size x:Key="ShapeSize">200,68</av:Size>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_91">
+      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_91">
         <Sequence.Variables>
           <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strBatchColumn" />
           <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strClcdColumn" />
@@ -1932,10 +1944,10 @@
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">0,437</av:Point>
-          <av:Size x:Key="ShapeSize">200,68</av:Size>
+          <av:Size x:Key="ShapeSize">200,66</av:Size>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_104">
+      <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_104">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
