@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,1546" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1104,1446" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="39">
       <x:String>System.Activities</x:String>
@@ -43,7 +43,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="30">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -73,7 +73,6 @@
       <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="플로우차트" sap:VirtualizedContainerService.HintSize="1114,1381" sap2010:WorkflowViewState.IdRef="Flowchart_2">
@@ -103,14 +102,14 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID13</x:Reference>
+      <x:Reference>__ReferenceID10</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID13">
+    <FlowStep x:Name="__ReferenceID10">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">20,121.5</av:Point>
           <av:Size x:Key="ShapeSize">200,97</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">220,170 250,170 250,160 360,160</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">220,170 250,170 250,118 350,118</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Sequence sap2010:Annotation.AnnotationText="0. 프로젝트 변수 설정" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_7">
@@ -182,12 +181,12 @@
         </ui:MultipleAssign>
       </Sequence>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID12">
+        <FlowStep x:Name="__ReferenceID9">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">360,106</av:Point>
+              <av:Point x:Key="ShapeLocation">350,64</av:Point>
               <av:Size x:Key="ShapeSize">200,108</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">460,214 460,244 360,244 360,251.5</av:PointCollection>
+              <av:PointCollection x:Key="ConnectorLocation">450,172 450,202 360,202 360,251.5</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Sequence sap2010:Annotation.AnnotationText="1. 빅데이터 포탈 접속테스트_batch" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="Sequence_162">
@@ -197,13 +196,13 @@
                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="1. 빅데이터 포탈 점검&#xA;        * .txt 초기파일 생성" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="1343,1634" sap2010:WorkflowViewState.IdRef="OpenBrowser_10" NewSession="True" Url="https://bigdataportal.dpt.co.kr/">
+            <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" sap2010:Annotation.AnnotationText="1. 빅데이터 포탈 점검&#xA;        * .txt 초기파일 생성" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="611,93" sap2010:WorkflowViewState.IdRef="OpenBrowser_10" NewSession="True" Url="https://bigdataportal.dpt.co.kr/">
               <ui:OpenBrowser.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1309,1491" sap2010:WorkflowViewState.IdRef="Sequence_150">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1309,1493" sap2010:WorkflowViewState.IdRef="Sequence_150">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="strDate" />
                       <Variable x:TypeArguments="x:String" Name="subStr" />
@@ -256,7 +255,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:GetValue>
-                    <If sap2010:Annotation.AnnotationText="일자가 10일보다 작은경우 형식 맞추기 ex) 11/1 " Condition="[dateBfdate.ToString(&quot;dd&quot;)&lt; &quot;10&quot;]" sap:VirtualizedContainerService.HintSize="1267,497" sap2010:WorkflowViewState.IdRef="If_63">
+                    <If sap2010:Annotation.AnnotationText="일자가 10일보다 작은경우 형식 맞추기 ex) 11/1 " Condition="[dateBfdate.ToString(&quot;dd&quot;)&lt; &quot;10&quot;]" sap:VirtualizedContainerService.HintSize="1267,499" sap2010:WorkflowViewState.IdRef="If_63">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -294,13 +293,13 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="611,309" sap2010:WorkflowViewState.IdRef="Sequence_149">
+                        <Sequence sap:VirtualizedContainerService.HintSize="611,311" sap2010:WorkflowViewState.IdRef="Sequence_149">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[dateBfdate.ToString(&quot;MM&quot;)&lt; &quot;10&quot;]" sap:VirtualizedContainerService.HintSize="569,217" sap2010:WorkflowViewState.IdRef="If_62">
+                          <If Condition="[dateBfdate.ToString(&quot;MM&quot;)&lt; &quot;10&quot;]" sap:VirtualizedContainerService.HintSize="569,219" sap2010:WorkflowViewState.IdRef="If_62">
                             <If.Then>
                               <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_144">
                                 <Assign.To>
@@ -366,18 +365,21 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:OpenBrowser>
-            <Sequence sap2010:Annotation.AnnotationText="1-4. VIP Plus 접속테스트" sap:VirtualizedContainerService.HintSize="1343,2459" sap2010:WorkflowViewState.IdRef="Sequence_156">
+            <Sequence sap2010:Annotation.AnnotationText="1-4. VIP Plus 접속테스트" sap:VirtualizedContainerService.HintSize="611,97" sap2010:WorkflowViewState.IdRef="Sequence_156">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strResult" />
                 <Variable x:TypeArguments="x:String" Name="strVIPname" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  https://bigdataporta...'" sap:VirtualizedContainerService.HintSize="876,106" sap2010:WorkflowViewState.IdRef="Click_134" KeyModifiers="None" MouseButton="BTN_LEFT">
@@ -417,7 +419,7 @@
                   <OutArgument x:TypeArguments="x:String">[strResult]</OutArgument>
                 </ui:GetValue.Value>
               </ui:GetValue>
-              <If Condition="[strResult is Nothing]" sap:VirtualizedContainerService.HintSize="876,376" sap2010:WorkflowViewState.IdRef="If_70">
+              <If Condition="[strResult is Nothing]" sap:VirtualizedContainerService.HintSize="876,380" sap2010:WorkflowViewState.IdRef="If_70">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_157">
                     <Assign.To>
@@ -429,7 +431,7 @@
                   </Assign>
                 </If.Then>
                 <If.Else>
-                  <If Condition="[strResult = &quot;0명&quot;]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_69">
+                  <If Condition="[strResult = &quot;0명&quot;]" sap:VirtualizedContainerService.HintSize="569,220" sap2010:WorkflowViewState.IdRef="If_69">
                     <If.Then>
                       <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_158">
                         <Assign.To>
@@ -607,7 +609,7 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayMS="2000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1343,116" sap2010:WorkflowViewState.IdRef="SendHotkey_77" Key="w" KeyModifiers="Ctrl, Shift">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayMS="2000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="611,116" sap2010:WorkflowViewState.IdRef="SendHotkey_77" Key="w" KeyModifiers="Ctrl, Shift">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f94067b3-c61f-48b2-86cf-9dbf5345cd46">
                   <ui:Target.TimeoutMS>
@@ -619,7 +621,29 @@
                 </ui:Target>
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBefore="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1343,116" sap2010:WorkflowViewState.IdRef="SendHotkey_78" Key="r" KeyModifiers="Win">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'MSTaskListWClass'" sap:VirtualizedContainerService.HintSize="611,106" sap2010:WorkflowViewState.IdRef="Click_153" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72d3f90d-5daa-42ce-81bf-3ece875b5f4b" InformativeScreenshot="41ae8868fed91701e949145aa32830c3" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='실행 중인 응용 프로그램' /&gt;&lt;wnd cls='MSTaskListWClass' title='실행 중인 응용 프로그램' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBefore="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="611,116" sap2010:WorkflowViewState.IdRef="SendHotkey_78" Key="r" KeyModifiers="Win">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e197ae9a-91f4-4849-a7f5-70d6f56254f3">
                   <ui:Target.TimeoutMS>
@@ -631,7 +655,7 @@
                 </ui:Target>
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="1343,134" sap2010:WorkflowViewState.IdRef="TypeInto_28" Text="C:\Users\MD_ENG\Desktop\monitor\batch\monitor_start.bat">
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="611,134" sap2010:WorkflowViewState.IdRef="TypeInto_28" Text="C:\Users\MD_ENG\Desktop\monitor\batch\monitor_start.bat">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b68b1766-0525-4b10-9f67-6d89c781d099" InformativeScreenshot="0b47fefd7a9fe9a30e4667c8b5790092" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -643,7 +667,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1343,116" sap2010:WorkflowViewState.IdRef="SendHotkey_79" Key="enter" KeyModifiers="None" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="611,116" sap2010:WorkflowViewState.IdRef="SendHotkey_79" Key="enter" KeyModifiers="None" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e197ae9a-91f4-4849-a7f5-70d6f56254f3">
                   <ui:Target.TimeoutMS>
@@ -655,9 +679,14 @@
                 </ui:Target>
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
-            <Sequence sap2010:Annotation.AnnotationText="배치&#xA;" sap:VirtualizedContainerService.HintSize="1343,5552" sap2010:WorkflowViewState.IdRef="Sequence_168">
+            <Sequence sap2010:Annotation.AnnotationText="배치&#xA;" sap:VirtualizedContainerService.HintSize="611,5552" sap2010:WorkflowViewState.IdRef="Sequence_168">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="tmp" />
+                <Variable x:TypeArguments="x:String" Name="strbi" />
+                <Variable x:TypeArguments="x:String" Name="strams" />
+                <Variable x:TypeArguments="x:String" Name="strcampaign" />
+                <Variable x:TypeArguments="x:String" Name="strdig" />
+                <Variable x:TypeArguments="x:String" Name="strtrend" />
+                <Variable x:TypeArguments="x:Boolean" Name="tmp" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -670,6 +699,7 @@
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="2000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_90" Key="r" KeyModifiers="Win" SpecialKey="False">
@@ -683,8 +713,14 @@
                       </ui:Target.WaitForReady>
                     </ui:Target>
                   </ui:SendHotkey.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:SendHotkey>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_35" Text="[globalRoot+&quot;monitor\batch\bi-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_35" Text="[globalRoot+&quot;monitor\batch\log\bi-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
                   <ui:TypeInto.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd4ddd08-10e4-4064-8e52-b3440c8718fe" InformativeScreenshot="dedc7797cbc3b1657fe735a115b03859" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -707,6 +743,12 @@
                       </ui:Target.WaitForReady>
                     </ui:Target>
                   </ui:SendHotkey.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
                 </ui:SendHotkey>
                 <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_92" Key="r" KeyModifiers="Win" SpecialKey="False">
                   <ui:SendHotkey.Target>
@@ -720,7 +762,7 @@
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_36" Text="[globalRoot+&quot;monitor\batch\ams-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_36" Text="[globalRoot+&quot;monitor\batch\log\ams-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
                   <ui:TypeInto.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd4ddd08-10e4-4064-8e52-b3440c8718fe" InformativeScreenshot="dedc7797cbc3b1657fe735a115b03859" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -756,7 +798,7 @@
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_37" Text="[globalRoot+&quot;monitor\batch\campaign-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_37" Text="[globalRoot+&quot;monitor\batch\log\campaign-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
                   <ui:TypeInto.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd4ddd08-10e4-4064-8e52-b3440c8718fe" InformativeScreenshot="dedc7797cbc3b1657fe735a115b03859" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -792,7 +834,7 @@
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_38" Text="[globalRoot+&quot;monitor\batch\digitalengine-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_38" Text="[globalRoot+&quot;monitor\batch\log\digitalengine-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
                   <ui:TypeInto.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd4ddd08-10e4-4064-8e52-b3440c8718fe" InformativeScreenshot="dedc7797cbc3b1657fe735a115b03859" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -828,7 +870,7 @@
                     </ui:Target>
                   </ui:SendHotkey.Target>
                 </ui:SendHotkey>
-                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_39" Text="[globalRoot+&quot;monitor\batch\trend-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
+                <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_39" Text="[globalRoot+&quot;monitor\batch\log\trend-&quot;+dateTdydate.ToString(&quot;yyyyMMdd&quot;)+&quot;.txt&quot;]">
                   <ui:TypeInto.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="dd4ddd08-10e4-4064-8e52-b3440c8718fe" InformativeScreenshot="dedc7797cbc3b1657fe735a115b03859" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
                       <ui:Target.TimeoutMS>
@@ -855,17 +897,14 @@
               </Sequence>
               <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="bi" DisplayName="Get Text 'editable text  텍스트 편집'" sap:VirtualizedContainerService.HintSize="569,137" sap2010:WorkflowViewState.IdRef="GetValue_61">
                 <ui:GetValue.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="0a48327c092538f5530a92d1a2f57d96" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='bi-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="c5087093de1684e4f87000b56e0edeac" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='bi-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:GetValue.Target>
                 <ui:GetValue.Value>
-                  <OutArgument x:TypeArguments="x:String">[tmp]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[strbi]</OutArgument>
                 </ui:GetValue.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -873,7 +912,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <If Condition="[tmp.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_82">
+              <If Condition="[strbi.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_82">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_181">
                     <Assign.To>
@@ -897,17 +936,14 @@
               </If>
               <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="ams" DisplayName="Get Text 'editable text  텍스트 편집'" sap:VirtualizedContainerService.HintSize="569,137" sap2010:WorkflowViewState.IdRef="GetValue_62">
                 <ui:GetValue.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="0a48327c092538f5530a92d1a2f57d96" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='ams-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="0a48327c092538f5530a92d1a2f57d96" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='ams-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:GetValue.Target>
                 <ui:GetValue.Value>
-                  <OutArgument x:TypeArguments="x:String">[tmp]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[strams]</OutArgument>
                 </ui:GetValue.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -915,7 +951,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <If Condition="[tmp.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_83">
+              <If Condition="[strams.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_83">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_183">
                     <Assign.To>
@@ -939,17 +975,14 @@
               </If>
               <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="campaign" DisplayName="Get Text 'editable text  텍스트 편집'" sap:VirtualizedContainerService.HintSize="569,137" sap2010:WorkflowViewState.IdRef="GetValue_63">
                 <ui:GetValue.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="0a48327c092538f5530a92d1a2f57d96" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='campaign-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="0a48327c092538f5530a92d1a2f57d96" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='campaign-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:GetValue.Target>
                 <ui:GetValue.Value>
-                  <OutArgument x:TypeArguments="x:String">[tmp]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[strcampaign]</OutArgument>
                 </ui:GetValue.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -957,7 +990,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <If Condition="[tmp.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_84">
+              <If Condition="[strcampaign.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_84">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_185">
                     <Assign.To>
@@ -981,17 +1014,14 @@
               </If>
               <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="digitalengine" DisplayName="Get Text 'editable text  텍스트 편집'" sap:VirtualizedContainerService.HintSize="569,137" sap2010:WorkflowViewState.IdRef="GetValue_64">
                 <ui:GetValue.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="b3b81b4352b8b49f616d2602e99049d7" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='digitalengine-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="b3b81b4352b8b49f616d2602e99049d7" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='digitalengine-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:GetValue.Target>
                 <ui:GetValue.Value>
-                  <OutArgument x:TypeArguments="x:String">[tmp]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[strdig]</OutArgument>
                 </ui:GetValue.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -999,7 +1029,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <If Condition="[tmp.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_85">
+              <If Condition="[strdig.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_85">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_187">
                     <Assign.To>
@@ -1023,17 +1053,14 @@
               </If>
               <ui:GetValue ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="트랜드뷰" DisplayName="Get Text 'editable text  텍스트 편집'" sap:VirtualizedContainerService.HintSize="569,137" sap2010:WorkflowViewState.IdRef="GetValue_65">
                 <ui:GetValue.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="b3b81b4352b8b49f616d2602e99049d7" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='trend-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;">
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c338180b-bcbc-4d2e-9c0b-0b0a6cf0feec" InformativeScreenshot="b3b81b4352b8b49f616d2602e99049d7" Selector="&lt;wnd app='notepad.exe' cls='Notepad' title='trend-*.txt - Windows 메모장' /&gt;&lt;wnd aaname='가로' cls='Edit' /&gt;&lt;ctrl name='텍스트 편집' role='editable text' /&gt;" WaitForReady="COMPLETE">
                     <ui:Target.TimeoutMS>
                       <InArgument x:TypeArguments="x:Int32" />
                     </ui:Target.TimeoutMS>
-                    <ui:Target.WaitForReady>
-                      <InArgument x:TypeArguments="ui:WaitForReady" />
-                    </ui:Target.WaitForReady>
                   </ui:Target>
                 </ui:GetValue.Target>
                 <ui:GetValue.Value>
-                  <OutArgument x:TypeArguments="x:String">[tmp]</OutArgument>
+                  <OutArgument x:TypeArguments="x:String">[strtrend]</OutArgument>
                 </ui:GetValue.Value>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1041,7 +1068,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetValue>
-              <If Condition="[tmp.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_86">
+              <If Condition="[strtrend.Contains(&quot;1 successful&quot;)]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_86">
                 <If.Then>
                   <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_189">
                     <Assign.To>
@@ -1174,14 +1201,50 @@
                 </ui:Click.Target>
               </ui:Click>
             </Sequence>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DelayBefore="2000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="611,116" sap2010:WorkflowViewState.IdRef="SendHotkey_102" Key="r" KeyModifiers="Win">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e197ae9a-91f4-4849-a7f5-70d6f56254f3">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'Edit'" sap:VirtualizedContainerService.HintSize="611,134" sap2010:WorkflowViewState.IdRef="TypeInto_41" Text="C:\Users\MD_ENG\Desktop\monitor\batch\monitor_end.bat">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b68b1766-0525-4b10-9f67-6d89c781d099" InformativeScreenshot="0b47fefd7a9fe9a30e4667c8b5790092" Selector="&lt;wnd app='explorer.exe' cls='#32770' title='실행' /&gt;&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="611,116" sap2010:WorkflowViewState.IdRef="SendHotkey_103" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e197ae9a-91f4-4849-a7f5-70d6f56254f3">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
           </Sequence>
           <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID11">
+            <FlowStep x:Name="__ReferenceID8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <av:Point x:Key="ShapeLocation">260,251.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,97</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">460,300 540,300</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">460,301 490,301 490,268 720,268 720,298</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <Sequence sap2010:Annotation.AnnotationText="1-1. EBM점검" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_138">
@@ -1392,9 +1455,9 @@
                 <FlowStep x:Name="__ReferenceID0">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <av:Point x:Key="ShapeLocation">540,238.5</av:Point>
+                      <av:Point x:Key="ShapeLocation">620,298</av:Point>
                       <av:Size x:Key="ShapeSize">200,123</av:Size>
-                      <av:PointCollection x:Key="ConnectorLocation">640,361.5 640,391.5 120,391.5 120,416</av:PointCollection>
+                      <av:PointCollection x:Key="ConnectorLocation">620,359.5 250,359.5 250,470 220,470</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_35">
@@ -1436,7 +1499,7 @@
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">20,416</av:Point>
                           <av:Size x:Key="ShapeSize">200,108</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">220,470 320,470</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">120,416 120,386 290,386 290,470 320,470</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <Sequence sap2010:Annotation.AnnotationText="2. DataStage S3 browser &#xA;" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="Sequence_109">
@@ -1890,7 +1953,7 @@
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <av:Point x:Key="ShapeLocation">320,408.5</av:Point>
                               <av:Size x:Key="ShapeSize">200,123</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">420,531.5 420,561.5 110,561.5 110,591.5</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">420,531.5 420,561.5 240,561.5 240,641 210,641</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                           <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_112">
@@ -1927,12 +1990,12 @@
                             </Assign>
                           </Sequence>
                           <FlowStep.Next>
-                            <FlowStep x:Name="__ReferenceID6">
+                            <FlowStep x:Name="__ReferenceID4">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <av:Point x:Key="ShapeLocation">10,591.5</av:Point>
                                   <av:Size x:Key="ShapeSize">200,97</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">210,640 320,640</av:PointCollection>
+                                  <av:PointCollection x:Key="ConnectorLocation">110,688.5 110,700 290,700 290,640 320,640</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <Sequence sap2010:Annotation.AnnotationText="5. 문화배송 웹 접속테스트" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_128">
@@ -2519,7 +2582,7 @@
                                 </ui:SendHotkey>
                               </Sequence>
                               <FlowStep.Next>
-                                <FlowStep x:Name="__ReferenceID7">
+                                <FlowStep x:Name="__ReferenceID5">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <av:Point x:Key="ShapeLocation">320,578.5</av:Point>
@@ -2561,7 +2624,7 @@
                                     </Assign>
                                   </Sequence>
                                   <FlowStep.Next>
-                                    <FlowStep x:Name="__ReferenceID5">
+                                    <FlowStep x:Name="__ReferenceID3">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <av:Point x:Key="ShapeLocation">0,761.5</av:Point>
@@ -2739,12 +2802,12 @@
                                         </ui:Click>
                                       </Sequence>
                                       <FlowStep.Next>
-                                        <FlowStep x:Name="__ReferenceID8">
+                                        <FlowStep x:Name="__ReferenceID6">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <av:Point x:Key="ShapeLocation">320,748.5</av:Point>
                                               <av:Size x:Key="ShapeSize">200,123</av:Size>
-                                              <av:PointCollection x:Key="ConnectorLocation">520,810 710,810 710,1146</av:PointCollection>
+                                              <av:PointCollection x:Key="ConnectorLocation">420,871.5 420,1200 610,1200</av:PointCollection>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
                                           <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_132">
@@ -2781,7 +2844,7 @@
                                             </Assign>
                                           </Sequence>
                                           <FlowStep.Next>
-                                            <FlowStep x:Name="__ReferenceID10">
+                                            <FlowStep x:Name="__ReferenceID7">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <av:Point x:Key="ShapeLocation">610,1146</av:Point>
@@ -3998,757 +4061,6 @@
         </ui:SendHotkey>
       </Sequence>
     </FlowStep>
-    <FlowStep x:Name="__ReferenceID9">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">290,951.5</av:Point>
-          <av:Size x:Key="ShapeSize">200,97</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">390,1048.5 390,1078.5 100,1078.5 100,1151.5</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="3-2. 사은 배치처리 로그조회" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_101">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="x:String" Name="strBatchFileName" />
-          <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strBatchColumn" />
-          <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strClcdColumn" />
-          <Variable x:TypeArguments="x:Boolean" Name="BoolBat" />
-        </Sequence.Variables>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="569,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_6" Path="[globalFolder+&quot;\gift&quot;]" />
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_57" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93d8348a-7264-4789-9d9a-e2dbf82c6de8" InformativeScreenshot="5ae7925c0d3d18dd3a5ef9298db43aec" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.LeftFrame.form.di*' role='text' text='로그관리' idx='2' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_58" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce0a7b80-deb9-4bad-a300-e1da5f7094f4" InformativeScreenshot="e88b5cccaf2d56299cb699904ab0a64d" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.LeftFrame.form.di*' role='text' text='배치처리 로그조회' idx='2' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_59" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="521226c5-389e-4568-b677-c3ef8610aedc" InformativeScreenshot="dc273fa0fbf4849e7cc6e5390804ff51" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.VFrameSet1.WorkFr*' role='text' text='조회(R)' idx='2' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_60" KeyModifiers="None" MouseButton="BTN_RIGHT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="814759a0-c62d-48c0-82fc-3a8fd3c34075" InformativeScreenshot="50848a62d31c480f0d3b9471caf0be84" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.VFrameSet1.WorkFr*' role='text' text='배치명' idx='3' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_61" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5d122df1-5f6c-471d-a64d-1c8fb386e83f" InformativeScreenshot="658cef0dc6139eb35fa156d2a2ca3853" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.VFrameSet1.WorkFr*' role='text' text='엑셀' idx='2' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_62" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2ad9e2c6-327c-4c64-be86-0eb6d5cf7803" InformativeScreenshot="841cfcf79122f42526099d64f1ed3c30" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&#xA;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.VFrameSet1.WorkFr*' role='text' text='내보내기' idx='2' /&gt;&#xA;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Edit'" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="GetValue_26">
-          <ui:GetValue.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f799d8d0-2e63-4837-9d6a-3b1acf31abc3" InformativeScreenshot="6a5265e5cde7dbf2e1e410bfc0f7301b" Selector="&lt;wnd app='nexacro.exe' cls='#32770' title='FileSave' /&gt;&#xA;&lt;wnd ctrlid='1148' /&gt;&#xA;&lt;wnd ctrlid='1148' /&gt;&#xA;&lt;wnd ctrlid='1148' aaname='파일 이름(N):' aastate='포커스 가능' cls='Edit' /&gt;&#xA;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:GetValue.Target>
-          <ui:GetValue.Value>
-            <OutArgument x:TypeArguments="x:String">[strBatchFileName]</OutArgument>
-          </ui:GetValue.Value>
-        </ui:GetValue>
-        <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DelayMS="4000" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_63" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a382a8a-39e6-4d10-b9cb-6d445e03acd0" InformativeScreenshot="45884820f9e93e63a643c83de9a40efc" Selector="&lt;wnd app='nexacro.exe' cls='#32770' title='FileSave' /&gt;&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:ReadColumn DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="569,87" sap2010:WorkflowViewState.IdRef="ReadColumn_6" Result="[strClcdColumn]" SheetName="sheet1" StartingCell="E2" WorkbookPath="[globalRoot+strBatchFileName]" />
-        <Assign sap:VirtualizedContainerService.HintSize="569,60" sap2010:WorkflowViewState.IdRef="Assign_70">
-          <Assign.To>
-            <OutArgument x:TypeArguments="x:Boolean">[BoolBat]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
-          </Assign.Value>
-        </Assign>
-        <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="569,598" sap2010:WorkflowViewState.IdRef="ForEach`1_10" Values="[strClcdColumn]">
-          <ui:ForEach.Body>
-            <ActivityAction x:TypeArguments="x:Object">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
-              </ActivityAction.Argument>
-              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="526,464" sap2010:WorkflowViewState.IdRef="Sequence_100">
-                <Sequence.Variables>
-                  <Variable x:TypeArguments="x:String" Name="tmp" />
-                </Sequence.Variables>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <If Condition="[item.Equals(&quot;성공&quot;)]" sap:VirtualizedContainerService.HintSize="484,372" sap2010:WorkflowViewState.IdRef="If_34">
-                  <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_99">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_72">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:Boolean">[BoolBat]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                      <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_4" />
-                    </Sequence>
-                  </If.Else>
-                </If>
-              </Sequence>
-            </ActivityAction>
-          </ui:ForEach.Body>
-        </ui:ForEach>
-        <If Condition="[BoolBat]" sap:VirtualizedContainerService.HintSize="569,218" sap2010:WorkflowViewState.IdRef="If_35">
-          <If.Then>
-            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_73">
-              <Assign.To>
-                <OutArgument x:TypeArguments="s:String[]">[strLog]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="s:String[]">[strLog.Append("|정상| 사은 배치처리 로그조회 결과 전체 성공").ToArray]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </If.Then>
-          <If.Else>
-            <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_74">
-              <Assign.To>
-                <OutArgument x:TypeArguments="s:String[]">[strLog]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="s:String[]">[strLog.Append("|비정상| 사은 배치처리 로그조회 실패, 사은시스템-운영관리-배치처리로그조회 확인필요").ToArray]</InArgument>
-              </Assign.Value>
-            </Assign>
-          </If.Else>
-        </If>
-        <ui:MoveFile ContinueOnError="{x:Null}" Destination="[globalFolder+&quot;\gift&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="569,157" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[globalRoot+strBatchFileName]" />
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_115" KeyModifiers="None" MouseButton="BTN_RIGHT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8efd90ef-5eed-47b2-90a0-77d706009a0d" InformativeScreenshot="cab2898b73f9275767cfef86a87b5976" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='실행 중인 응용 프로그램' /&gt;&lt;wnd cls='MSTaskListWClass' title='실행 중인 응용 프로그램' /&gt;&lt;ctrl name='실행 중인 응용 프로그램' role='tool bar' /&gt;&lt;ctrl automationid='Microsoft.AutoGenerated.{BD30E286-32FC-1005-B625-B3A7EFA0A806}' idx='2' name='gift - 1개의 실행 중인 창' role='push button' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DelayMS="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_33" Key="up" KeyModifiers="None" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d31c006f-a582-4349-9b51-5d446aa67c5a">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_34" Key="enter" KeyModifiers="None" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d31c006f-a582-4349-9b51-5d446aa67c5a">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-      </Sequence>
-      <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID4">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">0,1151.5</av:Point>
-              <av:Size x:Key="ShapeSize">200,97</av:Size>
-              <av:PointCollection x:Key="ConnectorLocation">200,1200 290,1200</av:PointCollection>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Sequence sap2010:Annotation.AnnotationText="4. 에누리 배치처리 로그조회" sap:VirtualizedContainerService.HintSize="200,97" sap2010:WorkflowViewState.IdRef="Sequence_124">
-            <Sequence.Variables>
-              <Variable x:TypeArguments="x:String" Name="strBatchFileName" />
-              <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strBatchColumn" />
-              <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strClcdColumn" />
-              <Variable x:TypeArguments="x:Boolean" Name="BoolBat" />
-              <Variable x:TypeArguments="x:String" Name="strBatchFileName_enr" />
-              <Variable x:TypeArguments="scg:IEnumerable(x:Object)" Name="strClcdColumn_enr" />
-              <Variable x:TypeArguments="x:Boolean" Name="BoolBat_enr" />
-            </Sequence.Variables>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:CreateDirectory ContinueOnError="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="569,79" sap2010:WorkflowViewState.IdRef="CreateDirectory_7" Path="[globalFolder+&quot;\enr&quot;]" />
-            <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="'nexacro.exe  롯데백화점 사은시스템' 열기" FileName="[globalRoot+&quot;monitor\enr.lnk&quot;]" sap:VirtualizedContainerService.HintSize="569,87" sap2010:WorkflowViewState.IdRef="StartProcess_2" />
-            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'editable text '" sap:VirtualizedContainerService.HintSize="569,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" Text="[strBigPwd]">
-              <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4a00b9ea-cdc7-4c27-8d30-c94406aa3ab1" InformativeScreenshot="9d85f4a9b6d7aebaa7e2c417fb2235ed" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDESSet.LoginFrame.form.loginBox.form.div_login.*' idx='4' role='editable text' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:TypeInto.Target>
-            </ui:TypeInto>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_23" Key="enter" KeyModifiers="None" SpecialKey="True">
-              <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="dcb7e21a-44e3-439b-9907-39a9be11fea3">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:SendHotkey.Target>
-            </ui:SendHotkey>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="6000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_85" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="93d8348a-7264-4789-9d9a-e2dbf82c6de8" InformativeScreenshot="d7f1ab9089d6b8fee640fbafbd518aef" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.TopFrame.form.div_top.form*' idx='2' role='text' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_86" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ce0a7b80-deb9-4bad-a300-e1da5f7094f4" InformativeScreenshot="0d21ad6a37cd383976c83498065d51b4" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.HFrameSet.LeftFrame.form.d*' idx='50' role='text' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_87" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c02d5186-3b99-48f5-ab47-591f838d415b" InformativeScreenshot="d3c76edf690c965013deee3228a3eb4c" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.HFrameSet.LeftFrame.form.d*' idx='56' role='text' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_92" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d1b4cc3f-43da-4564-bddf-090e23de76de" InformativeScreenshot="9b750d7d32cf40af7f1769a38ae34551" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&#xA;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.HFrameSet.VFrameSet1.WorkF*' role='text' text='조회(R)' /&gt;&#xA;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_88" KeyModifiers="None" MouseButton="BTN_RIGHT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="215db0e0-1105-4e9c-a18a-9d769aa6ffb4" InformativeScreenshot="859c67beb8774e12a59667dacc3c7b7a" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.HFrameSet.VFrameSet1.WorkF*' role='text' text='종료일시' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_89" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d9646dd3-0e7d-41e0-b5de-42060723593f" InformativeScreenshot="3f40f8323a0526a0b0db3526a8d5028d" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.HFrameSet.VFrameSet1.WorkF*' role='text' text='엑셀' idx='*' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="074e3d17-b5e9-49a7-a3cf-7d7a7ddd6d82" InformativeScreenshot="ac046834d263712c93d120310780d5fa" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 에누리 시스템' /&gt;&#xA;&lt;ctrl automationid='mainframe.VFrameLDESSet.VMainFrameSet.HFrameSet.VFrameSet1.WorkF*' role='text' text='내보내기' idx='2' /&gt;&#xA;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_25" Key="enter" KeyModifiers="None" SpecialKey="True">
-              <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="03031548-7e4e-4114-a4b0-3fe1d77ea368">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:SendHotkey.Target>
-            </ui:SendHotkey>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text 'Edit'" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="GetValue_37">
-              <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f799d8d0-2e63-4837-9d6a-3b1acf31abc3" InformativeScreenshot="5e69987f8193e0b1e0167322ac3f4ed2" Selector="&lt;wnd app='nexacro.exe' cls='#32770' title='FileSave' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' aaname='파일 이름(N):' aastate='포커스 가능' cls='Edit' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:GetValue.Target>
-              <ui:GetValue.Value>
-                <OutArgument x:TypeArguments="x:String">[strBatchFileName_enr]</OutArgument>
-              </ui:GetValue.Value>
-            </ui:GetValue>
-            <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="3000" DelayMS="2500" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_91" KeyModifiers="None" MouseButton="BTN_LEFT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3a382a8a-39e6-4d10-b9cb-6d445e03acd0" InformativeScreenshot="a33ac150b18bf1548559260a4901c268" Selector="&lt;wnd app='nexacro.exe' cls='#32770' title='FileSave' /&gt;&lt;wnd ctrlid='1' title='저장(&amp;amp;S)' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:ReadColumn DisplayName="Read Column" sap:VirtualizedContainerService.HintSize="569,87" sap2010:WorkflowViewState.IdRef="ReadColumn_7" Result="[strClcdColumn_enr]" SheetName="sheet1" StartingCell="E2" WorkbookPath="[globalRoot+strBatchFileName_enr]" />
-            <Assign sap:VirtualizedContainerService.HintSize="569,60" sap2010:WorkflowViewState.IdRef="Assign_97">
-              <Assign.To>
-                <OutArgument x:TypeArguments="x:Boolean">[BoolBat_enr]</OutArgument>
-              </Assign.To>
-              <Assign.Value>
-                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
-              </Assign.Value>
-            </Assign>
-            <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="569,588" sap2010:WorkflowViewState.IdRef="ForEach`1_12" Values="[strClcdColumn_enr]">
-              <ui:ForEach.Body>
-                <ActivityAction x:TypeArguments="x:Object">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="526,454" sap2010:WorkflowViewState.IdRef="Sequence_123">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="tmp" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[item.Equals(&quot;성공&quot;)]" sap:VirtualizedContainerService.HintSize="484,362" sap2010:WorkflowViewState.IdRef="If_46">
-                      <If.Else>
-                        <Sequence sap:VirtualizedContainerService.HintSize="304,214" sap2010:WorkflowViewState.IdRef="Sequence_122">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_98">
-                            <Assign.To>
-                              <OutArgument x:TypeArguments="x:Boolean">[BoolBat_enr]</OutArgument>
-                            </Assign.To>
-                            <Assign.Value>
-                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                            </Assign.Value>
-                          </Assign>
-                          <ui:Break sap:VirtualizedContainerService.HintSize="262,22" sap2010:WorkflowViewState.IdRef="Break_5" />
-                        </Sequence>
-                      </If.Else>
-                    </If>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEach.Body>
-            </ui:ForEach>
-            <If Condition="[BoolBat_enr]" sap:VirtualizedContainerService.HintSize="569,208" sap2010:WorkflowViewState.IdRef="If_47">
-              <If.Then>
-                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_99">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="s:String[]">[strLog]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="s:String[]">[strLog.Append("|정상| 에누리 배치처리 로그조회 결과 전체 성공").ToArray]</InArgument>
-                  </Assign.Value>
-                </Assign>
-              </If.Then>
-              <If.Else>
-                <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_100">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="s:String[]">[strLog]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="s:String[]">[strLog.Append("|비정상| 배치처리 로그조회 실패, 에누리시스템-운영관리-배치처리로그조회 확인필요").ToArray]</InArgument>
-                  </Assign.Value>
-                </Assign>
-              </If.Else>
-            </If>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="5000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_71" Key="f4" KeyModifiers="Alt" SpecialKey="True">
-              <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="49d75872-2851-4167-bd21-786d4b320db0">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:SendHotkey.Target>
-            </ui:SendHotkey>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="5000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_72" Key="f4" KeyModifiers="Alt" SpecialKey="True">
-              <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="49d75872-2851-4167-bd21-786d4b320db0">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:SendHotkey.Target>
-            </ui:SendHotkey>
-            <ui:MoveFile ContinueOnError="{x:Null}" Destination="[globalFolder+&quot;\enr&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="569,157" sap2010:WorkflowViewState.IdRef="MoveFile_2" Overwrite="True" Path="[globalRoot+strBatchFileName_enr]" />
-            <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="3000" DelayMS="1000" DisplayName="Click 'push button'" sap:VirtualizedContainerService.HintSize="569,106" sap2010:WorkflowViewState.IdRef="Click_116" KeyModifiers="None" MouseButton="BTN_RIGHT">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8efd90ef-5eed-47b2-90a0-77d706009a0d" InformativeScreenshot="be5bba638a40e9b4b43b533f7698e17f" Selector="&lt;wnd app='explorer.exe' cls='Shell_TrayWnd' idx='*' /&gt;&lt;wnd cls='MSTaskSwWClass' title='실행 중인 응용 프로그램' /&gt;&lt;wnd cls='MSTaskListWClass' title='실행 중인 응용 프로그램' /&gt;&lt;ctrl name='실행 중인 응용 프로그램' role='tool bar' /&gt;&lt;ctrl automationid='Microsoft.AutoGenerated.{AFD1021B-2779-FFC0-5052-6BCC3A7EAAC0}' idx='2' omit:name='enr - 1개의 실행 중인 창' role='push button' /&gt;">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:Click.Target>
-            </ui:Click>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="1000" DelayMS="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_35" Key="up" KeyModifiers="None" SpecialKey="True">
-              <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d31c006f-a582-4349-9b51-5d446aa67c5a">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:SendHotkey.Target>
-            </ui:SendHotkey>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="1000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="569,116" sap2010:WorkflowViewState.IdRef="SendHotkey_36" Key="enter" KeyModifiers="None" SpecialKey="True">
-              <ui:SendHotkey.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="d31c006f-a582-4349-9b51-5d446aa67c5a">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:SendHotkey.Target>
-            </ui:SendHotkey>
-          </Sequence>
-          <FlowStep.Next>
-            <FlowStep x:Name="__ReferenceID3">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">290,1138.5</av:Point>
-                  <av:Size x:Key="ShapeSize">200,123</av:Size>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="- 로그남기기(.txt)&#xA;- 시퀀스 전, strLog 값 할당&#xA;- 시퀀스 후, strLog 값 초기화" sap:VirtualizedContainerService.HintSize="200,123" sap2010:WorkflowViewState.IdRef="Sequence_126">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="412,358" sap2010:WorkflowViewState.IdRef="ForEach`1_13" Values="[strLog]">
-                  <ui:ForEach.Body>
-                    <ActivityAction x:TypeArguments="x:Object">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="376,224" sap2010:WorkflowViewState.IdRef="Sequence_125">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:AppendLine DisplayName="Append Line" FileName="[globalTxt]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[item.ToString]" />
-                      </Sequence>
-                    </ActivityAction>
-                  </ui:ForEach.Body>
-                </ui:ForEach>
-                <Assign sap:VirtualizedContainerService.HintSize="412,60" sap2010:WorkflowViewState.IdRef="Assign_101">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="s:String[]">[strLog]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="s:String[]">[{""}]</InArgument>
-                  </Assign.Value>
-                </Assign>
-              </Sequence>
-            </FlowStep>
-          </FlowStep.Next>
-        </FlowStep>
-      </FlowStep.Next>
-    </FlowStep>
     <x:Reference>__ReferenceID1</x:Reference>
     <x:Reference>__ReferenceID2</x:Reference>
     <x:Reference>__ReferenceID3</x:Reference>
@@ -4757,255 +4069,6 @@
     <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
-    <FlowStep>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">0,936</av:Point>
-          <av:Size x:Key="ShapeSize">200,108</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">200,990 230,990 230,1000 290,1000</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="3-1. 사은 서비스상태 모니터링" DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="200,108" sap2010:WorkflowViewState.IdRef="Sequence_134">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="ui:Image" Name="imgTake1" />
-          <Variable x:TypeArguments="ui:Image" Name="imgTake2" />
-        </Sequence.Variables>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="'nexacro.exe  롯데백화점 사은시스템' 열기" FileName="[globalRoot+&quot;monitor\gift.lnk&quot;]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="StartProcess_4" />
-        <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'editable text '" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_22" Text="[strBigPwd]">
-          <ui:TypeInto.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="261f2b7b-7bcd-42a7-ac57-7cfd507aaec2" InformativeScreenshot="6b2d5808c3f1786dc639cac46dbae593" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.LoginFrame.form.div_login.form.edt_pw:in*' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:TypeInto.Target>
-        </ui:TypeInto>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_108" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition OffsetX="253" OffsetY="29" Position="TopLeft" />
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ddf99f95-6b2c-42e7-af46-6ebd4d879a91" InformativeScreenshot="0e4aacec81c6ed7f38553ee947c6428d" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.LoginFrame.form.div_login.form.btn_login*' role='text' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="5000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_109" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition OffsetX="56" OffsetY="36" Position="TopLeft" />
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="77ecaa20-8d72-49c8-bc4b-f7dc1000fc74" InformativeScreenshot="9634791e2caec6f0c7eaca65dac4c7c1" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.TopFrame.form.div_top.form.*' idx='2' role='text' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_110" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition OffsetX="51" OffsetY="26" Position="TopLeft" />
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d944a8e5-b792-41ec-9b30-d58f31ec30e5" InformativeScreenshot="68000a1e1272656205f1e25c0980a91b" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.LeftFrame.form.di*' idx='47' role='text' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="2000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_111" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition OffsetX="35" OffsetY="12" Position="TopLeft" />
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a4db2c9d-28cb-4f3c-8ce9-80192d015363" InformativeScreenshot="b7f0eee757a5b1588acd3a80a10124c4" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&#xA;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.VFrameSet1.WorkFr*' role='text' text='조회(R)' /&gt;&#xA;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_37" Key="down" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_38" Key="down" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_39" Key="down" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'grouping '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_5" Screenshot="[imgTake1]">
-          <ui:TakeScreenshot.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e488c8a7-bff0-4f78-bfd0-be16a7170e54" InformativeScreenshot="8dc9c0258f14e91c800d10d09b5ab9fb" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:TakeScreenshot.Target>
-        </ui:TakeScreenshot>
-        <ui:SaveImage DisplayName="Save Image" FileName="[globalFolder+&quot;\gift1.png&quot;]" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="SaveImage_5" Image="[imgTake1]" />
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_43" Key="up" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_44" Key="up" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_45" Key="up" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:Click AlterIfDisabled="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="3000" DelayMS="1000" DisplayName="Click 'text '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_112" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition OffsetX="35" OffsetY="12" Position="TopLeft" />
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a4db2c9d-28cb-4f3c-8ce9-80192d015363" InformativeScreenshot="b7f0eee757a5b1588acd3a80a10124c4" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;&lt;ctrl automationid='mainframe.VFrameLDGSSet.VFrameOFSSet.HFrameSet.VFrameSet1.WorkFr*' idx='61' role='text' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_40" Key="down" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_41" Key="down" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayMS="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_42" Key="down" KeyModifiers="Ctrl" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="e4a9db30-d55d-4cf3-9ba5-5d56d4fafa7c">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-        </ui:SendHotkey>
-        <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'grouping '" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_6" Screenshot="[imgTake2]">
-          <ui:TakeScreenshot.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e488c8a7-bff0-4f78-bfd0-be16a7170e54" InformativeScreenshot="8dc9c0258f14e91c800d10d09b5ab9fb" Selector="&lt;wnd app='nexacro.exe' cls='CyNexacroWClass17' title='롯데백화점 사은시스템[오피스]' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:TakeScreenshot.Target>
-        </ui:TakeScreenshot>
-        <ui:SaveImage DisplayName="Save Image" FileName="[globalFolder+&quot;\gift2.png&quot;]" sap:VirtualizedContainerService.HintSize="334,92" sap2010:WorkflowViewState.IdRef="SaveImage_6" Image="[imgTake2]" />
-      </Sequence>
-      <FlowStep.Next>
-        <x:Reference>__ReferenceID9</x:Reference>
-      </FlowStep.Next>
-    </FlowStep>
-    <x:Reference>__ReferenceID10</x:Reference>
-    <x:Reference>__ReferenceID11</x:Reference>
-    <x:Reference>__ReferenceID12</x:Reference>
+    <x:Reference>__ReferenceID9</x:Reference>
   </Flowchart>
 </Activity>
